@@ -113,8 +113,8 @@
       <li><a href="terms.html">Terms &amp; Conditions</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-ghost btn-sm">Contact</a>
-      <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Buy Now<span class="cta-price"> — ₹1,499</span></a>
+      <a href="contact.html" class="btn btn-ghost btn-sm nav-contact-btn">Contact</a>
+      <a href="#" class="btn btn-primary btn-sm buy-now-btn" target="_blank" rel="noopener">Buy Now<span class="cta-price"> — ₹1,499</span></a>
     </div>
     <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
   </nav>
@@ -336,10 +336,27 @@
         </div>
       </div>
 
+      <!-- Desktop: full zoomable infographic -->
       <button type="button" class="panel mt-40 hide-on-mobile zoomable" aria-label="Open larger view of the how-to-use steps">
         <img src="images/infographic-howtouse.png" alt="Step-by-step illustration showing how to open, fill, close, freeze and wear the Ice Cap Pro" loading="lazy" width="1536" height="1024">
         <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
       </button>
+
+      <!-- Mobile: individual step slider -->
+      <div class="img-slider show-on-mobile mt-40" data-slider="steps">
+        <div class="img-slider-track">
+          <div class="img-slider-slide"><img src="images/step_1.png" alt="Step 1: Open — access filling ports on cap" loading="lazy"></div>
+          <div class="img-slider-slide"><img src="images/step_2.png" alt="Step 2: Fill — add water to 85% using the funnel" loading="lazy"></div>
+          <div class="img-slider-slide"><img src="images/step_3.png" alt="Step 3: Close — seal ports tightly to prevent leaks" loading="lazy"></div>
+          <div class="img-slider-slide"><img src="images/step_4.png" alt="Step 4: Freeze — place flat in top freezer compartment" loading="lazy"></div>
+          <div class="img-slider-slide"><img src="images/step_5.png" alt="Step 5: Wear — adjust elastic strap for perfect fit" loading="lazy"></div>
+        </div>
+        <div class="img-slider-nav">
+          <button class="slider-prev" aria-label="Previous step">&#8592;</button>
+          <div class="slider-dots"></div>
+          <button class="slider-next" aria-label="Next step">&#8594;</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -351,10 +368,25 @@
         <h2>Four ports. One even, steady cool.</h2>
         <p>All four filling ports sit hidden beneath the cap's upper layer and close securely with velcro, so water stays exactly where you put it.</p>
       </div>
-      <button type="button" class="panel zoomable" aria-label="Open larger view of the fill port diagram">
+      <!-- Desktop: full zoomable infographic -->
+      <button type="button" class="panel zoomable hide-on-mobile" aria-label="Open larger view of the fill port diagram">
         <img src="images/infographic-fillports.png" alt="Diagram of the Ice Cap Pro front view, back view and upper view showing the four hidden water fill ports" loading="lazy" width="1536" height="1024">
         <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
       </button>
+
+      <!-- Mobile: 3-view slider -->
+      <div class="img-slider show-on-mobile" data-slider="ports">
+        <div class="img-slider-track">
+          <div class="img-slider-slide"><img src="images/fillport_front.png" alt="Front view of the Ice Cap Pro showing the upper layer cover and elastic bottom" loading="lazy"></div>
+          <div class="img-slider-slide"><img src="images/fillport_back.png" alt="Back view showing the adjustable Velcro strap and strap loop holders" loading="lazy"></div>
+          <div class="img-slider-slide"><img src="images/fillport_upper.png" alt="Upper view showing all four hidden water fill ports and the Aecure water fill design" loading="lazy"></div>
+        </div>
+        <div class="img-slider-nav">
+          <button class="slider-prev" aria-label="Previous view">&#8592;</button>
+          <div class="slider-dots"></div>
+          <button class="slider-next" aria-label="Next view">&#8594;</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -427,10 +459,12 @@
         <p>Ice Cap Pro ships ready to set up — the cap itself, a filling funnel, and clear instructions. No gel, no chemicals, no subscriptions. Just pure water and a design built to last.</p>
       </div>
 
-      <button type="button" class="panel zoomable" aria-label="Open larger view of the Ice Cap Pro box and cap">
-        <img src="images/box_and_cap.jpg" alt="Aecure Ice Cap Pro retail box next to the navy blue ice therapy cap, showing the full product packaging text" loading="lazy" width="1536" height="1024">
-        <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
-      </button>
+      <div class="box-img-wrap">
+        <button type="button" class="panel zoomable" aria-label="Open larger view of the Ice Cap Pro box and cap">
+          <img src="images/box_and_cap.jpg" alt="Aecure Ice Cap Pro retail box next to the navy blue ice therapy cap, showing the full product packaging text" loading="lazy" width="1536" height="1024">
+          <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
+        </button>
+      </div>
 
       <ul class="trust-strip-row">
         <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Works straight from the fridge or freezer</li>

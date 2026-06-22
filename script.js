@@ -201,7 +201,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (tabs.length) setZone('full');
 
-  // Tap-to-zoom lightbox for dense product/infographic images
+  // ============================================================
+  // IMAGE SLIDERS (mobile step-by-step + fill port views)
+  // ============================================================
+  document.querySelectorAll('.img-slider').forEach(slider => {
+    const track = slider.querySelector('.img-slider-track');
+    const slides = slider.querySelectorAll('.img-slider-slide');
+    const dotsWrap = slider.querySelector('.slider-dots');
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    if (!track || !slides.length) return;
+
+    let current = 0;
+    const total = slides.length;
+
+    // Build dots
+    const dots = Array.from({ length: total }, (_, i) => {
+      const d = document.createElement('button');
+      d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+      return d;
+    });
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(total - 1, index));
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      if (prevBtn) prevBtn.disabled = current === 0;
+      if (nextBtn) nextBtn.disabled = current === total - 1;
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    // Touch / swipe support
+    let touchStartX = 0, touchStartY = 0, dragging = false;
+    slider.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      dragging = true;
+    }, { passive: true });
+    slider.addEventListener('touchend', e => {
+      if (!dragging) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+        goTo(current + (dx < 0 ? 1 : -1));
+      }
+      dragging = false;
+    }, { passive: true });
+
+    goTo(0);
+  });
+
+  // ============================================================
   const lightbox = document.getElementById('lightbox');
   if (lightbox) {
     const lightboxImg = document.getElementById('lightbox-img');

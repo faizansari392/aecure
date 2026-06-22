@@ -1285,3 +1285,147 @@ p, .lede, .faq-a-inner, .legal-content p,
   .cta-banner .btn { width: 100%; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
 }
+
+/* ============================================
+   NAV MOBILE: Buy Now button always right of hamburger
+   ============================================ */
+/* On mobile the nav has: [logo] [spacer] [Buy Now] [☰]
+   We keep nav-cta visible but hide the ghost "Contact" link.
+   Order: brand → flex-grow spacer → nav-cta → toggle */
+@media (max-width: 880px) {
+  .nav { flex-wrap: nowrap; }
+  .nav-contact-btn { display: none; }    /* hide ghost contact btn on mobile */
+  .nav-cta { order: 2; flex-shrink: 0; }
+  .nav-toggle { order: 3; flex-shrink: 0; }
+  /* Buy Now sits between brand and hamburger */
+  .nav-cta .buy-now-btn {
+    padding: 9px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 400px) {
+  .cta-price { display: none; }
+  .nav-cta .buy-now-btn { padding: 8px 11px; font-size: 12px; }
+}
+
+/* ============================================
+   SHOW-ON-MOBILE / HIDE-ON-MOBILE utilities
+   ============================================ */
+.show-on-mobile { display: none; }
+@media (max-width: 640px) {
+  .hide-on-mobile { display: none !important; }
+  .show-on-mobile { display: block; }
+}
+
+/* ============================================
+   IMAGE SLIDER (mobile step-by-step + port views)
+   ============================================ */
+.img-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--line);
+  user-select: none;
+  touch-action: pan-y;
+}
+.img-slider-track {
+  display: flex;
+  transition: transform 0.38s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
+}
+.img-slider-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.img-slider-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+}
+.img-slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 12px 16px;
+  background: var(--ice-pale);
+  border-top: 1px solid var(--line);
+}
+.slider-prev,
+.slider-next {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  color: var(--navy-deep);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .15s, box-shadow .15s;
+}
+.slider-prev:hover, .slider-next:hover {
+  background: var(--navy-deep);
+  color: var(--white);
+}
+.slider-prev:disabled, .slider-next:disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+.slider-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.slider-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+  padding: 0;
+}
+.slider-dot.active {
+  background: var(--navy-deep);
+  transform: scale(1.3);
+}
+
+/* ============================================
+   HERO PHOTO — show face fully on mobile
+   ============================================ */
+@media (max-width: 480px) {
+  .hero-photo-wrap {
+    max-height: 380px;
+  }
+  .hero-photo-wrap img {
+    height: 380px;
+    object-fit: cover;
+    /* center vertically so the face is fully visible */
+    object-position: center 15%;
+  }
+}
+@media (min-width: 481px) and (max-width: 640px) {
+  .hero-photo-wrap img {
+    object-position: center 12%;
+  }
+}
+
+/* ============================================
+   BOX / TRUST photo — 50% shorter on mobile
+   ============================================ */
+@media (max-width: 640px) {
+  .box-img-wrap {
+    max-height: 240px;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+  }
+  .box-img-wrap img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
