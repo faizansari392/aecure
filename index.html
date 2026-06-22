@@ -1,249 +1,554 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aecure | Coming Soon</title>
-    
-    <!-- SAFE SEO META TAGS -->
-    <meta name="description" content="Aecure - Coming soon with innovative solutions. Stay tuned for our launch.">
-    <meta name="keywords" content="Aecure, coming soon, launch, new product">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <style>
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .coming-soon-container {
-            text-align: center;
-            color: white;
-            padding: 2rem;
-        }
-        
-        .logo {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .main-heading {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .subheading {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-        
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 3rem 0;
-            flex-wrap: wrap;
-        }
-        
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 1.5rem;
-            min-width: 100px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        }
-        
-        .countdown-number {
-            font-size: 3rem;
-            font-weight: bold;
-            display: block;
-        }
-        
-        .countdown-label {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.9;
-        }
-        
-        .notify-form {
-            max-width: 500px;
-            margin: 2rem auto;
-        }
-        
-        .form-control {
-            border-radius: 50px;
-            padding: 0.75rem 1.5rem;
-            border: none;
-        }
-        
-        .btn-notify {
-            border-radius: 50px;
-            padding: 0.75rem 2rem;
-            background: #ff6b6b;
-            border: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-notify:hover {
-            background: #ee5a52;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
-        .social-links {
-            margin-top: 3rem;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 1rem;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        
-        .social-links a:hover {
-            transform: translateY(-5px);
-            opacity: 0.8;
-        }
-        
-        @media (max-width: 768px) {
-            .main-heading {
-                font-size: 2.5rem;
-            }
-            
-            .countdown-number {
-                font-size: 2rem;
-            }
-            
-            .countdown-item {
-                min-width: 80px;
-                padding: 1rem;
-            }
-        }
-        
-        /* Safe SEO text - visible but very transparent */
-        .seo-text {
-            opacity: 0.05;
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Cap Pro by Aecure | 360° Cooling Ice Therapy Cap for Headache & Migraine Relief</title>
+<meta name="description" content="Ice Cap Pro is a reusable, refillable ice therapy cap with 4-zone cooling for headache, migraine, sinus pressure and stress relief. No gel, no chemicals — pure water, 1+ hour cooling, one fill lasts 6 months. ₹1,499.">
+<meta name="keywords" content="ice cap pro, migraine relief cap, headache cap, ice therapy cap, cooling cap for headache, sinus relief cap, aecure">
+<link rel="canonical" href="https://www.aecure.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="product">
+<meta property="og:title" content="Ice Cap Pro by Aecure | 360° Cooling Ice Therapy Cap">
+<meta property="og:description" content="Reusable, refillable ice therapy cap with 4-zone cooling for headache, migraine, sinus pressure and stress relief. No gel, no chemicals — pure water only.">
+<meta property="og:image" content="https://www.aecure.com/images/cap_studio.jpg">
+<meta property="og:url" content="https://www.aecure.com/">
+<meta property="og:site_name" content="Aecure">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ice Cap Pro by Aecure | 360° Cooling Ice Therapy Cap">
+<meta name="twitter:description" content="Reusable ice therapy cap with 4-zone cooling for headache, migraine and sinus relief.">
+<meta name="twitter:image" content="https://www.aecure.com/images/cap_studio.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/brand/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Ice Cap Pro",
+  "image": "https://www.aecure.com/images/cap_studio.jpg",
+  "description": "Reusable, refillable ice therapy cap with 360° four-zone cooling for headache, migraine, sinus pressure and stress relief. No gel, no chemicals — pure water only. One fill lasts up to 6 months.",
+  "brand": { "@type": "Brand", "name": "Aecure" },
+  "sku": "AECURE-ICECAPPRO-01",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.aecure.com/",
+    "priceCurrency": "INR",
+    "price": "1499",
+    "availability": "https://schema.org/InStock",
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 15,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aecure",
+  "url": "https://www.aecure.com/",
+  "logo": "https://www.aecure.com/images/brand/favicon-512.png",
+  "email": "support@aecure.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does Ice Cap Pro stay cold?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ice Cap Pro delivers 1+ hour of strong, steady cooling per freeze, thanks to its four-port water fill design and insulated velvet shell." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to refill it often?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A single fill is designed to last up to 6 months of regular use, so there's no need to refill before every session." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it use gel or chemicals?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Ice Cap Pro uses pure water only — no gel packs, no chemicals — making it a drug-free, chemical-free way to cool the head." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the refund policy?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aecure offers a 15-day full refund on Ice Cap Pro for defective, damaged, or unsatisfactory products. See the Terms & Refund Policy page for full details." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-    <div class="container">
-        <div class="coming-soon-container">
-            <!-- EXACT SAME VISUAL (no changes) -->
-            <div class="logo">🚀 BRAND</div>
-            
-            <h1 class="main-heading">Coming Soon</h1>
-            <p class="subheading">We're working hard to bring you something amazing. Stay tuned!</p>
-            
-            <!-- Countdown Timer (commented out as in original) -->
-            <!--
-            <div class="countdown" id="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-number" id="days">00</span>
-                    <span class="countdown-label">Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="hours">00</span>
-                    <span class="countdown-label">Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="minutes">00</span>
-                    <span class="countdown-label">Minutes</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="seconds">00</span>
-                    <span class="countdown-label">Seconds</span>
-                </div>
-            </div>
-            -->
-            
-            <!-- Email Notification Form (commented out as in original) -->
-            <!--
-            <div class="notify-form">
-                <form id="notifyForm">
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Enter your email" required>
-                        <button class="btn btn-notify btn-primary" type="submit">Notify Me</button>
-                    </div>
-                </form>
-            </div>
-            -->
-            
-            <!-- Social Media Links (commented out as in original) -->
-            <!--
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                    </svg>
-                </a>
-                <a href="#" aria-label="Twitter">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                    </svg>
-                </a>
-                <a href="#" aria-label="Instagram">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                    </svg>
-                </a>
-                <a href="#" aria-label="LinkedIn">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                </a>
-            </div>
-            -->
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <img src="images/brand/aecure-icon.png" alt="" width="18" height="29">
+      </span>
+      aecure
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#features">Why Ice Cap Pro</a></li>
+      <li><a href="index.html#how-it-works">How It Works</a></li>
+      <li><a href="index.html#compare">Compare</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms &amp; Conditions</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost btn-sm">Contact</a>
+      <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Buy Now<span class="cta-price"> — ₹1,499</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Clinically-inspired · Drug-free relief</span>
+        <h1>Relief that surrounds the pain, <em>not just sits on it.</em></h1>
+        <p class="lede">Ice Cap Pro is a refillable, 360° ice therapy cap built to ease headaches, migraines, sinus pressure and stress — with targeted cooling for the front, back, left or right of your head, or all at once.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Buy Now</a>
+          <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+          <div class="price-tag">₹1,499
+		  
+		  
+		  <span>One-time purchase · Targeted pain zone</span>
+		  
+		  </div>
         </div>
+        <div class="trust-strip">
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6V11C4 16 7.5 20.5 12 22C16.5 20.5 20 16 20 11V6L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>4-Zone Coverage</div>
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2V22M5 6L19 18M19 6L5 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>1+ Hour Cooling</div>
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>No Gel · No Chemicals</div>
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Reusable</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ring-orbit" aria-hidden="true">
+          <svg viewBox="0 0 400 400" fill="none">
+            <circle cx="200" cy="200" r="188" stroke="#CFE3F7" stroke-width="1.5" stroke-dasharray="3 10"/>
+            <circle cx="200" cy="12" r="6" fill="#2FBE7F"/>
+            <circle cx="200" cy="388" r="6" fill="#6FB8E8"/>
+            <circle cx="12" cy="200" r="6" fill="#6FB8E8"/>
+            <circle cx="388" cy="200" r="6" fill="#2FBE7F"/>
+          </svg>
+        </div>
+        <div class="hero-photo-wrap">
+          <img src="images/cap_front.jpg" alt="Man wearing the navy blue Ice Cap Pro ice therapy cap, front view, eyes closed in relief" width="640" height="900" loading="eager">
+        </div>
+        <div class="hero-badge b1">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2V22M5 6L19 18M19 6L5 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          1+ hr cooling
+        </div>
+        <div class="hero-badge b2">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="6" r="2" fill="currentColor"/><circle cx="12" cy="18" r="2" fill="currentColor"/><circle cx="6" cy="12" r="2" fill="currentColor"/><circle cx="18" cy="12" r="2" fill="currentColor"/></svg>
+          4 fill ports
+        </div>
+      </div>
     </div>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- ========== SAFE SEO CONTENT ========== -->
-    <!-- This is VISIBLE but almost transparent - 100% Google Safe -->
-    <div class="seo-text" aria-hidden="true">
-        <h1>Aecure</h1>
-        <p>Aecure is a new brand launching soon. We are working on exciting new products and solutions. Our website is currently under development and will be available shortly. Check back soon for updates about Aecure products and services.</p>
-        <p>Keywords: Aecure, new brand, coming soon, launching soon, products, solutions, website under construction.</p>
+  </section>
+
+  <!-- EMPATHY / PROBLEM -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head center" style="max-width:720px;">
+        <span class="eyebrow">The problem with gel packs</span>
+        <h2>Most cold therapy only cools one spot — and warms up fast.</h2>
+        <p>A flat gel pack covers one patch of your head and loses its chill in 15–30 minutes. Headaches, migraines and sinus pressure rarely stay in one place. Ice Cap Pro was designed around that gap — full-head coverage, targeted where you actually hurt, that keeps working long after a gel pack has gone warm.</p>
+      </div>
     </div>
-    
-    <!-- ========== GOOGLE-SAFE STRUCTURED DATA ========== -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Aecure",
-        "url": "https://aecure.com",
-        "description": "Aecure website coming soon",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Aecure"
-        }
-    }
-    </script>
-    
+  </section>
+
+  <!-- ZONE DIAGRAM -->
+  <section class="section section-alt" id="zones">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Targeted relief</span>
+        <h2>Cool where it hurts — not everywhere it doesn't.</h2>
+        <p>Four hidden fill ports let you load water into exactly the zones you need. Tap a zone to see what it's built for.</p>
+      </div>
+
+      <div class="zone-block">
+        <div class="zone-diagram">
+          <svg viewBox="0 0 300 300" aria-hidden="true">
+            <circle cx="150" cy="150" r="92" fill="none" stroke="#D9E5F2" stroke-width="1.5" stroke-dasharray="2 8"/>
+            <circle cx="150" cy="150" r="56" fill="#EAF3FC"/>
+            <path d="M150 108C133 108 120 122 120 142C120 165 133 182 150 188C167 182 180 165 180 142C180 122 167 108 150 108Z" fill="#FFFFFF" stroke="#CFE3F7" stroke-width="1.5"/>
+            <text x="150" y="146" text-anchor="middle" class="zone-center-label">ICE CAP</text>
+            <text x="150" y="160" text-anchor="middle" class="zone-center-label" font-size="10">PRO</text>
+
+            <g class="zone-node" data-zone="front">
+              <circle class="dot" cx="150" cy="42" r="7" fill="#16317E"/>
+              <text x="150" y="22" text-anchor="middle">Front</text>
+            </g>
+            <g class="zone-node" data-zone="back">
+              <circle class="dot" cx="150" cy="258" r="7" fill="#16317E"/>
+              <text x="150" y="284" text-anchor="middle">Back</text>
+            </g>
+            <g class="zone-node" data-zone="left">
+              <circle class="dot" cx="42" cy="150" r="7" fill="#16317E"/>
+              <text x="42" y="178" text-anchor="middle">Left</text>
+            </g>
+            <g class="zone-node" data-zone="right">
+              <circle class="dot" cx="258" cy="150" r="7" fill="#16317E"/>
+              <text x="258" y="178" text-anchor="middle">Right</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="zone-copy">
+          <div class="zone-tabs">
+            <button class="zone-tab" data-zone="front">Front</button>
+            <button class="zone-tab" data-zone="back">Back</button>
+            <button class="zone-tab" data-zone="left">Left</button>
+            <button class="zone-tab" data-zone="right">Right</button>
+            <button class="zone-tab active" data-zone="full">Full coverage</button>
+          </div>
+          <div class="zone-detail">
+            <h3>Full coverage</h3>
+            <p>All four ports filled together for 360° relief — the setting most people reach for at the end of a long day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">Why choose Ice Cap Pro</span>
+        <h2>Smarter design. Better relief.</h2>
+        <p>Every detail is built around one job: deliver real, lasting cooling without the mess, the chemicals, or the constant refilling.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6V11C4 16 7.5 20.5 12 22C16.5 20.5 20 16 20 11V6L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <h3>360° cooling coverage</h3>
+          <p>Full head coverage helps relieve headaches, migraines, sinus pressure and stress — not just one spot.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="2" fill="currentColor"/><circle cx="17" cy="7" r="2" fill="currentColor"/><circle cx="7" cy="17" r="2" fill="currentColor"/><circle cx="17" cy="17" r="2" fill="currentColor"/></svg></div>
+          <h3>4 hidden fill ports</h3>
+          <p>Discreet, leak-resistant ports tucked under the upper layer for even water distribution and balanced cooling.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>No frequent refills</h3>
+          <p>One fill is designed to last up to 6 months of regular use, so it's ready whenever you need it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4V18H10L12 21L14 18H19V4H5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <h3>Easy, mess-free filling</h3>
+          <p>Comes with a funnel for spill-free filling, so topping up water stays quick and clean.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12C4 7.5 7.5 4 12 4C16.5 4 20 7.5 20 12C20 16.5 16.5 20 12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 12H8M16 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Comfortable, secure fit</h3>
+          <p>A soft velvet exterior and adjustable strap with an elastic base mould comfortably to most head sizes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12C3 12 6 5 12 5C18 5 21 12 21 12C21 12 18 19 12 19C6 19 3 12 3 12Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3>Premium, reusable material</h3>
+          <p>A durable, leak-resistant, non-toxic velvet shell built for long-term, repeated cold therapy — not a one-time-use pack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS STRIP / image -->
+  <section class="section-tight section-alt">
+    <div class="container gallery-grid">
+      <div class="panel">
+        <img src="images/cap_studio.jpg" alt="Ice Cap Pro ice therapy cap, navy blue velvet, studio shot showing the quilted top and adjustable strap" loading="lazy" width="615" height="656">
+      </div>
+      <div class="copy">
+        <span class="eyebrow">Built for real relief</span>
+        <h2 style="margin-top:14px;">Relief that adapts, not a one-size guess.</h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Eases headaches, migraines, sinus pressure and tension</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Drug-free and chemical-free — pure water only</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Lightweight, portable, and easy to use anywhere</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Reusable design that cuts down on single-use waste</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Promotes better rest and relaxation after use</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Five steps. Next refill after six months.</h2>
+        <p>Set it up once and Ice Cap Pro is ready whenever a headache, migraine, or stressful day calls for it.</p>
+      </div>
+
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Open</h3>
+          <p>Access the filling ports hidden under the cap's upper layer.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Fill</h3>
+          <p>Add water to about 85% of each port using the included funnel.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Close</h3>
+          <p>Seal each port tightly with its velcro cover to prevent leaks.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Freeze</h3>
+          <p>Lay it flat in the freezer until the water turns to ice.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <h3>Wear</h3>
+          <p>Adjust the strap and elastic base for a snug, comfortable fit.</p>
+        </div>
+      </div>
+
+      <button type="button" class="panel mt-40 hide-on-mobile zoomable" aria-label="Open larger view of the how-to-use steps">
+        <img src="images/infographic-howtouse.png" alt="Step-by-step illustration showing how to open, fill, close, freeze and wear the Ice Cap Pro" loading="lazy" width="1536" height="1024">
+        <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FILL PORT INFOGRAPHIC -->
+  <section class="section-tight section-alt">
+    <div class="container">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">Inside the design</span>
+        <h2>Four ports. One even, steady cool.</h2>
+        <p>All four filling ports sit hidden beneath the cap's upper layer and close securely with velcro, so water stays exactly where you put it.</p>
+      </div>
+      <button type="button" class="panel zoomable" aria-label="Open larger view of the fill port diagram">
+        <img src="images/infographic-fillports.png" alt="Diagram of the Ice Cap Pro front view, back view and upper view showing the four hidden water fill ports" loading="lazy" width="1536" height="1024">
+        <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="section" id="compare">
+    <div class="container">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">Ice Cap Pro vs. gel caps</span>
+        <h2>Smarter design. Longer-lasting results.</h2>
+        <p>Here's how Ice Cap Pro stacks up against a typical gel cap or gel pack.</p>
+      </div>
+
+      <div class="compare-table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="col-pro">Ice Cap Pro</th>
+              <th class="col-gel">Gel caps / gel packs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">Coverage</td>
+              <td class="col-pro"><span class="tick">✓</span>360° full-head coverage</td>
+              <td><span class="cross">✕</span>Limited to one area</td>
+            </tr>
+            <tr>
+              <td class="row-label">Fill system</td>
+              <td class="col-pro"><span class="tick">✓</span>4 hidden ports for even cooling</td>
+              <td><span class="cross">✕</span>No fill ports, fixed gel</td>
+            </tr>
+            <tr>
+              <td class="row-label">Targeted relief</td>
+              <td class="col-pro"><span class="tick">✓</span>Front, back, left, right, or full</td>
+              <td><span class="cross">✕</span>Only where it's placed</td>
+            </tr>
+            <tr>
+              <td class="row-label">Cooling duration</td>
+              <td class="col-pro"><span class="tick">✓</span>1+ hour of strong cooling</td>
+              <td><span class="cross">✕</span>Warms up in 15–30 minutes</td>
+            </tr>
+            <tr>
+              <td class="row-label">Fit &amp; comfort</td>
+              <td class="col-pro"><span class="tick">✓</span>Adjustable strap, elastic base</td>
+              <td><span class="cross">✕</span>One-size, loose fit</td>
+            </tr>
+            <tr>
+              <td class="row-label">Refills</td>
+              <td class="col-pro"><span class="tick">✓</span>One fill lasts up to 6 months</td>
+              <td><span class="cross">✕</span>Fixed gel, no refill option</td>
+            </tr>
+            <tr>
+              <td class="row-label">Material</td>
+              <td class="col-pro"><span class="tick">✓</span>Premium, skin-friendly velvet</td>
+              <td><span class="cross">✕</span>Basic plastic or nylon</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOX / TRUST -->
+  <section class="section-tight section-alt">
+    <div class="container">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">What's in the box</span>
+        <h2>Innovative. Honest. Effective.</h2>
+        <p>Ice Cap Pro ships ready to set up — the cap itself, a filling funnel, and clear instructions. No gel, no chemicals, no subscriptions. Just pure water and a design built to last.</p>
+      </div>
+
+      <button type="button" class="panel zoomable" aria-label="Open larger view of the Ice Cap Pro box and cap">
+        <img src="images/box_and_cap.jpg" alt="Aecure Ice Cap Pro retail box next to the navy blue ice therapy cap, showing the full product packaging text" loading="lazy" width="1536" height="1024">
+        <span class="zoom-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 8V14M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Tap to enlarge</span>
+      </button>
+
+      <ul class="trust-strip-row">
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Works straight from the fridge or freezer</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 4-zone targeting: right, front, left, back</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Backed by a 15-day full refund policy</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered.</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q">How long does Ice Cap Pro stay cold?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Strong ice retention delivers 1+ hour of steady cooling per freeze, so you get a full relief session without it warming up halfway through.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How often do I need to refill it?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Rarely. One fill is designed to last up to 6 months of regular use — fill it once and it's ready whenever you need it.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Does it use gel or chemicals?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">No. Ice Cap Pro uses pure water only across all four fill ports — no gel, no chemicals, no synthetic cooling agents.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Will it fit my head size?</button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. An adjustable velcro strap and elastic base are designed to give a snug, secure fit across a wide range of head sizes.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I target just one side, like a one-sided migraine?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Fill only the port(s) for the zone you need — left, right, front, or back — instead of the whole cap, for focused relief.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How do I store and freeze it between uses?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Lay it flat in your freezer's top compartment until the water inside turns to ice. Between sessions, you can keep it in the fridge or freezer — both storage methods work.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What's your refund policy if it arrives defective?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Aecure offers a 15-day full refund on Ice Cap Pro for defective, damaged, or unsatisfactory products — see our <a href="terms.html#refund-policy" style="color:var(--navy-mid);font-weight:600;">Terms &amp; Conditions Policy</a> page for the complete process.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>Ready to cool the pain down?</h2>
+          <p>Ice Cap Pro — ₹1,499. Backed by a 15-day full refund policy on defective or unsatisfactory products.</p>
+        </div>
+        <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark">
+            <img src="images/brand/aecure-icon.png" alt="" width="18" height="29">
+          </span>
+          aecure
+        </div>
+        <p>Innovative, honest, effective ice-based cooling systems. Ice Cap Pro is our strong product — designed for real, all-around headache and migraine relief.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#features">Why Ice Cap Pro</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#compare">Compare</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="terms.html#refund-policy">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:support@aecure.com">support@aecure.com</a></li>
+         
+		<!-- <li><a href="#">Buy on Amazon</a></li>  -->
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Aecure. All rights reserved.</span>
+      <span>Ice Cap Pro is a cold therapy comfort product</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image view">
+  <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close enlarged view">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-hint">Tap anywhere outside the image, or press Esc, to close</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
